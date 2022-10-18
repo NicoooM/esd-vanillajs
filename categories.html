@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/categories.js" type="module"></script>
+    <script defer src="utils/apiCalls.js" type="module"></script>
+    <script defer src="utils/commons.js" type="module"></script>
+    <script defer src="utils/searchBar.js" type="module"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="styles/categories.css" />
+    <link rel="stylesheet" href="styles/commons.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="root">
+        <header>
+          <ul>
+            <li>
+              <a href="/index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="/meals.html">Recettes</a>
+            </li>
+            <li>
+              <a href="/categories.html">Catégories</a>
+            </li>
+            <li>
+              <form id="search-form">
+                <div class="meals-search-wrapper">
+                  <div class="meals-search-wrapper__input">
+                    <input
+                      type="text"
+                      id="meal-search"
+                      class="meal-search"
+                      placeholder="Rechercher une recette"
+                    />
+                    <i class="ph-magnifying-glass-bold"></i>
+                  </div>
+                  <button
+                    type="submit"
+                    id="meal-search-button"
+                    class="meal-search-button"
+                  >
+                    Rechercher
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </header>
+        <h1>Toutes les catégories</h1>
+        <ul id="categories-list" class="categories-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
